@@ -1,19 +1,63 @@
-{% extends 'base.html' %}
 {% load static %}
-{% block titel %} Home {% endblock %}
-
-{% block right %}
-{% endblock %}
-
-{% block middle %}
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
-    <div class="">
-        <h1 class="heading-DealApp">DealApp</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'js/slide-sidebar.js' %}"></script>
+    <title>{% block titel %}Title{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/landing-header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
+{#    <link rel="stylesheet" href="{% static 'css/style.css' %}">#}
+    <link rel="stylesheet" href="{% static 'css/landing.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-grid.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-reboot.css' %}">
+    <link rel="stylesheet" href="{% static 'css/search/main_search.css' %}">
+<body>
+    {% include 'sidebar.html' %}
+    <div class="landing-header">
+        <div class="landing-open-sidebar">
+            <span class="divider"></span>
+            <span class="divider"></span>
+            <span class="divider"></span>
+        </div>
+        <div class="landing-menu">
+            <ul>
+                <li>Menu</li>
+                <li>About</li>
+                <li class="premium">Premium</li>
+            </ul>
+        </div>
+        <div class="landing-logo">
+            <h2>DealApp</h2>
+        </div>
+        <div class="header-reg">
+            <ul>
+                <li>Log In </li>
+                <li>/</li>
+                <li>Register</li>
+            </ul>
+        </div>
     </div>
-    <div class="info-box">
-        <h5 class="info-DealApp">This site provides you the fastest and easiest way to find a supplier or distributor of goods</h5>
-    </div>
-{% endblock %}
+    <section class="landing-top-section">
+        <div class="content">
+            <button>Join Us</button>
+        </div>
+    </section>
+   <section class="landing-2-section">
 
-{% block left %}
-{% endblock %}
+   </section>
+    <section class="landing-top-section">
+        <div class="content">
+            <button>Join Us</button>
+        </div>
+    </section>
+    <section class="landing-2-section">
+
+    </section>
+
+{#    {% include 'footer.html' %}#}
+
+</body>
+</html>

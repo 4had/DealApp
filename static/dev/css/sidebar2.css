@@ -1,0 +1,11 @@
+.sidebar {
+    display: block;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    left: -300px;
+    background-color: black;
+}
+.active {
+    left: 0;
+}

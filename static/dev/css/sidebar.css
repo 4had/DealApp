@@ -20,17 +20,15 @@
     padding: 20px 0;
     background-color: #3a3a3a;
     height: 100%;
-    left: -300px;
+    left: 0;
     -webkit-transition: left 0.4s;
     -moz-transition: left 0.4s;
     -o-transition: left 0.4s;
     transition: left 0.4s;
-    z-index: 999999
-
 
 }
 
-.sidebar.active {
+.active {
     left: 0;
 }
 
@@ -42,23 +40,6 @@
 .sidebar a:hover{
     color: white;
     text-decoration: none;
-}
-
-.icon-menu {
-    display: block;
-    height: 30px;
-    width: 30px;
-    float: left;
-    padding: 5px;
-    cursor: pointer;
-    margin: 10px 0 0 10px;
-}
-
-.divide {
-    display: block;
-    height: 3px;
-    margin: 3px 0;
-    background-color: white;
 }
 
 .sidebar img {
