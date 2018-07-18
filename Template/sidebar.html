@@ -33,8 +33,10 @@
             </ul>
         </div>
             {% else %}
-            <button class="btn sidebar-login-btn"><a href="{% url 'access:login' %}">Login</a></button>
-            <button class="btn sidebar-signup-btn"><a href="{% url 'access:signup' %}">Sign Up</a></button>
+            <div class="btn-container">
+                <button class="sidebar-login-btn"><a href="{% url 'access:login' %}">Login</a></button>
+                <button class="sidebar-login-btn"><a href="{% url 'access:signup' %}">Sign Up</a></button>
+            </div>
         {% endif %}
     </div>
 </div>
