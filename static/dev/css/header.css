@@ -45,7 +45,6 @@
     text-align: center;
     display: inline-block;
     font-size: 20px;
-
 }
 
 .landing-logo h2 {
@@ -92,6 +91,7 @@
     float: right;
     height: 100%;
     padding: 30px;
+    margin-right: 13.5%;
 }
 
 .header-search input, input:focus {
